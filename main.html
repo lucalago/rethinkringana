@@ -1,0 +1,1321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>RE*THINK Sound Synthesizer</title>
+  </head>
+  <body>
+
+<!-- CONTENT STRUCTURE -->
+
+<!-- CONTENT - landing -->
+<section id="landingpage">
+    <div>
+        <div class="container-fluid" id="background-landing">
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-landing">
+            <div class="row">
+                <div class="col-5" id="landing-col-left">
+                    <img src="resources/wellnessforgood-logo.png">
+                    <h1>Welcome</h1>
+                    <h3>To the <strong>RE*THINK</strong><br>Sound Synthesizer.<br></h3>
+                </div>
+                <div class="col" id="landing-col-right">
+                    <h5>Please put on the heaphones to start the experience.</h5><br><br>
+                    <h5>Are you ready to discover the sound of your consumption?</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="nav-bar-start">
+            <button class="nav-button button-next" id="nextsection-test" href="#consent"><img src="resources/Icons/arrow-right.svg"><br>start</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - consent / warning -->
+<section id="consent">
+    <div>
+        <div class="container-fluid" id="background-consent">
+        </div>
+    </div>
+    <div>
+        <div class="container" id="consent-box">
+                <div class="col-12 justify-content-center">
+                    <img id="img-warning" src="resources/Icons/warning.png">
+                    <h1><strong>WARNING</strong></h1>
+                    <h5>This experience contains high pitched noises, sound repetition and/or sounds reproduced at a high volume.<br><br>If you have had any issues caused by a similar situation in the past, then please do not continue with the experience.<br><br>If you start the experience and begin to develop any symptoms, then please stop immediately.</h5>
+                </div>
+        </div>
+        <div class="container-fluid" id="nav-bar-start">
+            <button class="nav-button button-previous" id="previoussection-consent" href="#landingpage"><img src="resources/Icons/arrow-left.svg">return</button>
+            <button class="nav-button button-next" id="nextsection-consent" href="#test"><img src="resources/Icons/arrow-right.svg"><br>agree</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTENT - test the sounds -->
+<section id="test">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-test">
+            <h2>Every package has a unique sound. Try it!</h2>
+        </div>
+        <div class="container" id="pack-section-0">
+            <div class="row justify-content-around" id="row1">
+                
+                <div class="col products-images-div lipstick"><a onclick="myAudioFunction('A');" ><img class="products-images" src="resources/3D/1 Product.png"><h5>Lipstick</h5></a></div>
+
+                <div class="col products-images-div foam"><a  onclick="myAudioFunction('B');" ><img class="products-images" src="resources/3D/2 Product.png"><h5>Foam</h5></a></div>
+
+                <div class="col products-images-div hairspray"><a  onclick="myAudioFunction('C');" ><img class="products-images" src="resources/3D/3 Product.png"><h5>Hair Spray</h5></a></div>
+
+                <div class="col products-images-div moisturizer"><a  onclick="myAudioFunction('D');" ><img class="products-images" src="resources/3D/4 Product.png"><h5>Moisturizer</h5></a></div>
+
+                <div class="col products-images-div shampoo"><a  onclick="myAudioFunction('E');" ><img class="products-images" src="resources/3D/5 Product.png"><h5>Shampoo</h5></a></div>
+            </div>
+
+            <div class="row justify-content-around" id="row2">
+                
+                <div class="col products-images-div facialserum"><a onclick="myAudioFunction('F');" ><img class="products-images" src="resources/3D/6 Product.png"><h5>Facial Serum</h5></a></div>
+
+                <div class="col products-images-div supplements"><a  onclick="myAudioFunction('G');" ><img class="products-images" src="resources/3D/7 Product.png"><h5>Supplements</h5></a></div>
+
+                <div class="col products-images-div facewipes"><a  onclick="myAudioFunction('H');" ><img class="products-images" src="resources/3D/8 Product.png"><h5>Face Wipes</h5></a></div>
+
+                <div class="col products-images-div deodorant"><a  onclick="myAudioFunction('I');" ><img class="products-images" src="resources/3D/9 Product.png"><h5>Deodorant</h5></a></div>
+
+                <div class="col products-images-div facialoil"><a  onclick="myAudioFunction('J');" ><img class="products-images" src="resources/3D/10 Product.png"><h5>Facial Oil</h5></a></div>
+
+            </div>
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-start">
+            <button class="nav-button button-previous" id="previoussection-landing" href="#consent"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-start" href="#start"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - record your song -->
+<section id="start">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-0">
+            <h2>Now you can record your own song. </h2>
+            <!-- <h3>We'll start on your first tap.</h3> -->
+        </div>
+        <div class="container" id="pack-section-0">
+            <div class="row justify-content-around" id="row1">
+                
+                <div class="col products-images-div lipstick"><a onclick="myAudioFunction('A');" ><img class="products-images" src="resources/3D/1 Product.png"><h5>Lipstick</h5></a></div>
+
+                <div class="col products-images-div foam"><a  onclick="myAudioFunction('B');" ><img class="products-images" src="resources/3D/2 Product.png"><h5>Foam</h5></a></div>
+
+                <div class="col products-images-div hairspray"><a  onclick="myAudioFunction('C');" ><img class="products-images" src="resources/3D/3 Product.png"><h5>Hair Spray</h5></a></div>
+
+                <div class="col products-images-div moisturizer"><a  onclick="myAudioFunction('D');" ><img class="products-images" src="resources/3D/4 Product.png"><h5>Moisturizer</h5></a></div>
+
+                <div class="col products-images-div shampoo"><a  onclick="myAudioFunction('E');" ><img class="products-images" src="resources/3D/5 Product.png"><h5>Shampoo</h5></a></div>
+            </div>
+
+            <div class="row justify-content-around" id="row2">
+                
+                <div class="col products-images-div facialserum"><a onclick="myAudioFunction('F');" ><img class="products-images" src="resources/3D/6 Product.png"><h5>Facial Serum</h5></a></div>
+
+                <div class="col products-images-div supplements"><a  onclick="myAudioFunction('G');" ><img class="products-images" src="resources/3D/7 Product.png"><h5>Supplements</h5></a></div>
+
+                <div class="col products-images-div facewipes"><a  onclick="myAudioFunction('H');" ><img class="products-images" src="resources/3D/8 Product.png"><h5>Face Wipes</h5></a></div>
+
+                <div class="col products-images-div deodorant"><a  onclick="myAudioFunction('I');" ><img class="products-images" src="resources/3D/9 Product.png"><h5>Deodorant</h5></a></div>
+
+                <div class="col products-images-div facialoil"><a  onclick="myAudioFunction('J');" ><img class="products-images" src="resources/3D/10 Product.png"><h5>Facial Oil</h5></a></div>
+
+            </div>
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-start">
+            <button class="nav-button button-previous" id="previoussection-test" href="#test"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-1" href="#one"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - listen your song -->
+<section id="one">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-1">
+            <h2>This is how it sounds! </h2>
+            <h3>Do you like it? If not, hit back to try again. </h2>
+        </div>
+        <div class="container" id="replay-section">
+            <div class="col-12">
+                <img id="headphone-svg" src="resources/Icons/headphone.svg">
+                <h4>Your song</h4>
+                <div class="row justify-content-center mt-5" id="playback-controls">
+                    <button id="pause-button"><a  onclick="myAudioFunction('user');" ><svg width="3rem" height="3rem" viewBox="0 0 16 16" class="bi bi-pause" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                      </svg></a></button>
+                    <button id="play-button"><a  onclick="myAudioFunction('user');" ><svg width="7rem" height="7rem" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                    </svg></a></button>
+                    <button id="replay-button"><a  onclick="myAudioFunction('user');" ><svg width="3rem" height="3rem" viewBox="0 0 16 16" class="bi bi-arrow-clockwise" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+                        <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+                    </svg></a></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid justify-content-center align-self-center" id="nav-bar-1">
+            <button class="nav-button button-previous" id="previoussection-0" href="#start"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-2" href="#two"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - 20 sounds scaling -->
+<section id="two">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-2">
+            <h2>Now listen to the sound of 20 packages being used.</h2>
+            <h3>Still sounds OK, right? </h3>
+        </div>
+            <div class="container" id="pack-section-2">
+                <div class="row justify-content-around" id="row1"> 
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                    </div>
+                    <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                    </div>
+                </div>
+        </div>
+    <div class="container-fluid justify-content-between align-self-center" id="nav-bar-2">
+        <button class="nav-button button-previous" id="previoussection-1" href="#one"><img src="resources/Icons/arrow-left.svg">back</button>
+        <button class="nav-button button-next" id="nextsection-3" href="#three"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+    </div>
+    </div>
+</section>
+
+<!-- CONTENT - 30 sounds scaling -->
+<section id="three">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-3">
+            <h2>How about 30 packages?</h2>
+        </div>
+        <div class="container" id="pack-section-3">
+            <div class="row justify-content-around" id="row1"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>             
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-left row-justified-left" id="row2-half"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-3">
+            <button class="nav-button button-previous" id="previoussection-2" href="#two"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-4" href="#four"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - 50 sounds scaling -->
+<section id="four">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-4">
+            <h2>Now 50...what do you think?</h2>
+        </div>
+        <div class="container" id="pack-section-4">
+            <div class="row justify-content-around" id="row1">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row2"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>             
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-left row-justified-left" id="row3-half"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons icons-pad"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-4">
+            <button class="nav-button button-previous" id="previoussection-3" href="#three"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-5" href="#five"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - 100 sounds scaling -->
+<section id="five">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-5">
+            <h2>What about 100? Starting to hurt your ears?</h2>
+        </div>
+        <div class="container" id="pack-section-5">
+            <div class="row justify-content-around" id="row1">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row2"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>             
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row3">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row4"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>             
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row5">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-5">
+            <button class="nav-button button-previous" id="previoussection-4" href="#four"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-6" href="#six"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - 200 sounds scaling -->
+<section id="six">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-6">
+            <h2>OK now 200. Want it to stop now?</h2>
+        </div>
+        <div class="container" id="pack-section-6">
+            <div class="row justify-content-around" id="row1">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row2"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>             
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row3"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>             
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row4">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row6">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row5">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row7"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>             
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row8">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row9">
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>
+            <div class="row justify-content-around" id="row10"> 
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/1 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/10 Product.svg">
+                </div>             
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/2 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/3 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/9 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/6 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/7 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/4 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/5 Product.svg">
+                </div>
+                <div class="avatar w-56 m-2 no-shadow gd-success icons"><img src="resources/icons/8 Product.svg">
+                </div>
+            </div>  
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-6">
+            <button class="nav-button button-previous" id="previoussection-5" href="#five"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-7" href="#thousand"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - 1000 sounds scaling -->
+<section id="thousand">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-6">
+            <h2>Last round, 1000.</h2>
+        </div>
+        <div class="container" id="pack-section-6">
+            <div class="row justify-content-around" id="row1">
+                <img id="thousand-icons" src="resources/Icons/Icons-Image-1000.png">
+            </div>
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-6">
+            <button class="nav-button button-previous" id="previoussection-5" href="#six"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-7" href="#seven"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - OUTCOME -->
+<section id="seven">
+    <div>
+        <div class="container-fluid" id="background-7">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo-alt.png" id="wellnessforgood-logo-alt">
+            <h1 id="h1-alternative">The<span id="highlight-2">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-outcome">
+            <h2 id="h2-alternative">Can you imagine the noise of <span id="bold-text"><u>120 billion</u></span> packages? </h2> 
+            <h3 class="title-animation-2" id="h2-alternative-2">That is how many are produced in the cosmetics industry <u>each year.</u> </h3>
+            <h3 class="title-animation-3" id="h2-alternative-2">The majority <u>cannot be recycled.</u> </h3>
+            <h3 class="title-animation-4" id="h2-alternative-2">The earth is being drowned by plastic in the ocean and in landfills.</h3>
+            <h3 class="title-animation-5" id="h2-alternative-2">And all of our cosmetics packages are part of this.</h3>
+        </div>
+        
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-7">
+            <button class="nav-button button-previous button-alternative" id="previoussection-6" href="#thousand"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next button-alternative" id="nextsection-8" href="#eight"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - INFINITE SCROLL -->
+<section id="eight">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div>
+        <div class="container" id="text-section-6">
+            <h2>Why not trying to scroll through 120 billion packages? Give it a go...</h2>
+        </div>
+
+        <div class="container" id="infinite-div">
+            <div class="row justify-content-left" id="row-infinite-image"><img src="resources/Icons/Icons-image.png"></div>
+            <div class="row justify-content-left" id="row-infinite-image"><img src="resources/Icons/Icons-image.png"></div>
+        </div>
+        <div class="container scroll-info">
+            <h3>You have scrolled through <strong><span id="counter-packs">0</span></strong> packagings.</h3>
+        </div>
+        <div class="container" id="message-div">
+            <div class="message" id="message-1">
+                <h3>How long do you have?</h3>
+            </div>
+            <div class="message" id="message-2">
+                <h3>We're tired already.</h3>
+            </div>
+            <div class="message" id="message-3">
+                <h3>OK, that's enough. For you to scroll through 120 billion packages you'd be scrolling here for...<br><br>14 straight days. No breaks allowed.</h3>
+            </div>
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-start">
+            <button class="nav-button button-previous" id="previoussection-test" href="#seven"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-conclusion" href="#nine"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - CONCLUSION -->
+<section id="nine">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container" id="text-section-conclusion">
+            <h2 id="h2-big">This is our time to act.</h2>
+        </div>
+        <div class="container" id="text-conclusion">
+            <h3 id="conclusion-1">Every time <u>you buy another</u> cosmetics product that isn't refillable, reusable or recyclable there is a very high likelihood <u>it will end up in the ocean or in landfill</u>.</h3>
+            <br>
+            <h3 id="conclusion-2">Many packages will take up to <u>1000 years to break down</u>.</h3>
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-start">
+            <button class="nav-button button-previous" id="previoussection-test" href="#eight"><img src="resources/Icons/arrow-left.svg">back</button>
+            <button class="nav-button button-next" id="nextsection-1" href="#ten"><img src="resources/Icons/arrow-right.svg"><br>next</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTENT - BRACELET -->
+<section id="ten">
+    <div>
+        <div class="container-fluid" id="background">
+        </div>
+        <div class="container-fluid" id="header-bar">
+            <img src="resources/wellnessforgood-logo.png" id="wellnessforgood-logo">
+            <h1>The<span id="highlight">RE*THINK</span>Sound Synthesizer</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container" id="text-section-bracelet">
+            <h2 id="h2-big">What's next?</h2>
+        </div>
+        <div class="col-6">
+            <h3>To find out what you can do to prevent this, tap your <strong>RE*THINK bracelet</strong> to add this to your personalised action plan.</h3>
+        </div>
+        <div class="col-6">
+            <img src="resources/Icons/bracelet.png">
+        </div>
+        <div class="container-fluid justify-content-between align-self-center" id="nav-bar-start">
+            <button class="nav-button button-previous" id="previoussection-test" href="#nine"><img src="resources/Icons/arrow-left.svg">back</button>
+            <!-- <button class="nav-button button-next" id="nextsection-1" href="#ten"><img src="resources/Icons/arrow-right.svg"><br>next</button> -->
+        </div>
+    </div>
+</section>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="howler.js"></script>
+    <script src="plugins/howler.spatial.js"></script>
+  </body>
+</html>
